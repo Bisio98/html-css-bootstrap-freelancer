@@ -1,0 +1,165 @@
+/* GENERAL */
+.white{
+    color:white;
+}
+
+img{
+    width: 100%;
+}
+
+/* HEADER */
+header{
+    position: fixed;
+    z-index: 1;
+    padding: 20px 10px;
+    background-color: #2C3E50;
+    width: 100%;
+    font-size: 30px;
+}
+
+.name{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.burger_menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.burger_menu i:hover{
+    cursor: pointer;
+}
+
+.burger_menu span{
+    font-size: 20px;
+    display: none;
+    margin: auto 30px;
+}
+
+@media (min-width: 768px) {
+    .name{
+        justify-content: space-evenly;
+    }
+
+    .burger_menu{
+        justify-content: center;
+    }
+
+    .burger_menu i{
+        display: none;
+    }
+
+    .burger_menu span{
+        display: inline-block;
+    }
+}
+
+/* MAIN */
+
+/* start */
+.start{
+    position: relative;
+    padding-top: 130px;
+    background-color: #1ABC9C;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start h1{
+    font-weight: 700;
+}
+
+.start img{
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.start span{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.sep{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.line{
+    height: 4px;
+    width: 100px;
+    background-color: white;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+@media (min-width: 768px)  {
+    .start .sep .line{
+        width: 150px;
+    }
+}
+
+
+@media (min-width: 992px)  {
+    .start .sep .line{
+        width: 200px;
+    }
+}
+
+/* portfolio */
+.portfolio{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container_port{
+    width: 90%;
+    margin: auto;
+}
+
+.portfolio .sep{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .sep .line{
+    background-color: black;
+}
+
+.col{
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+}
+
+.col img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay i{
+    font-size: 70px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col:hover img {
+    opacity: 0.3;
+}
+  
+.col:hover i {
+    opacity: 1;
+}
